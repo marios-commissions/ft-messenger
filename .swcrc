@@ -1,0 +1,64 @@
+{
+	"$schema": "https://json.schemastore.org/swcrc",
+	"minify": true,
+	"module": {
+		"type": "commonjs"
+	},
+	"jsc": {
+		"externalHelpers": false,
+		"parser": {
+			"syntax": "typescript",
+			"tsx": true,
+			"decorators": true,
+			"dynamicImport": false
+		},
+		"target": "esnext",
+		"minify": {
+			"compress": {
+				"booleans_as_integers": true,
+				"dead_code": true,
+				"unused": true,
+				"ecma": "2022",
+				"reduce_vars": true,
+				"reduce_funcs": true,
+				"keep_classnames": true,
+				"keep_fargs": false,
+				"keep_fnames": true
+			},
+			"mangle": {
+				"keepClassNames": true,
+				"keepFnNames": true,
+				"keepPrivateProps": true
+			}
+		},
+		"transform": {
+			"react": {
+				"useBuiltins": true
+			}
+		},
+		"baseUrl": "src",
+		"paths": {
+			"@config": [
+				"../config.json"
+			],
+			"@structures": [
+				"structures/index.ts"
+			],
+			"@structures/*": [
+				"structures/*"
+			],
+			"@utilities": [
+				"utilities/index.ts"
+			],
+			"@utilities/*": [
+				"utilities/*"
+			],
+			"@constants": [
+				"constants.ts"
+			],
+			"@lib/*": [
+				"lib/*"
+			]
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"auth": "eyJhbGxxxxxxxxxxxNiIxxxxxxxxxnR5cCxxxxxxxxxxxxxCJ9.xxxxxxxxxxxxxxxxxxxxxxxxx",
+	"portfolio": "0x0000000000000000000",
+	"debug": false,
+	"messages": [
+		"ijsaoigsajoigjoiasgjiosagjsoiagjisa",
+		"ojigfsjoigsajoigsjoiagjsioa",
+		"goihjshuiogsahuoigashuogsah"
+	],
+	"delay": {
+		"min": 1000,
+		"max": 5000
+	}
+}
