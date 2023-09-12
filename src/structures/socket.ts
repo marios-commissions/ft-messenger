@@ -43,10 +43,11 @@ class Socket extends WebSocket {
 		this.sendPing();
 
 		const chats = await api.getChats();
+		const filtered = chats.filter(e => !config.blacklisted.includes(e.chatRoomId));
 		let index = 0;
 
 		while (true) {
-			const chat = chats[Math.floor(Math.random() * chats.length)];
+			const chat = filtered[Math.floor(Math.random() * filtered.length)];
 
 			await api.sendMessage(config.messages[index], chat.chatRoomId);
 			console.log(`Sent message ${index + 1} to ${chat.chatRoomId}`);
