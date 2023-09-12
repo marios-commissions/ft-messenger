@@ -7,6 +7,9 @@
 		"ojigfsjoigsajoigsjoiagjsioa",
 		"goihjshuiogsahuoigashuogsah"
 	],
+	"blacklisted": [
+		"0x4d22666b13429fbc5d184db5105c69669ae6ed07"
+	],
 	"delay": {
 		"min": 1000,
 		"max": 5000
