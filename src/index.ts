@@ -7,8 +7,8 @@ const Logger = createLogger('FT');
 async function init() {
 	const chats = await API.getChats();
 
-	const list = chats.map(chat => `${chat.name} (@${chat.username}) - ${chat.chatRoomId}`).join('\n');
-	Logger.info(colorize(list, 'yellow'));
+	const list = chats.map(chat => colorize(`${chat.name} (@${chat.username}) - ${chat.chatRoomId}`, 'yellow')).join('\n');
+	Logger.info(list);
 }
 
 init();
