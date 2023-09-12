@@ -1,7 +1,6 @@
 import { bind, random, sleep } from '@utilities';
 import { PayloadTypes, URL } from '@constants';
 import { createLogger } from '@lib/logger';
-import getRandomItem from 'random-item';
 import config from '@config';
 import WebSocket from 'ws';
 import api from '@lib/api';
@@ -47,7 +46,7 @@ class Socket extends WebSocket {
 		let index = 0;
 
 		while (true) {
-			const chat = getRandomItem(chats);
+			const chat = chats[Math.floor(Math.random() * chats.length)];
 
 			await api.sendMessage(config.messages[index], chat.chatRoomId);
 			console.log(`Sent message ${index + 1} to ${chat.chatRoomId}`);
