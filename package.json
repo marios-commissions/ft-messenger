@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Forward messages from friends.tech to a Discord webhook.",
 	"main": "dist/index.js",
-	"author": "Mario <mariovparaschiv@gmail.com> (github.com/localip)",
+	"author": "Mario <me@marioparaschiv.com> (github.com/marioparaschiv)",
 	"license": "Unlicensed",
 	"scripts": {
 		"build": "swc src -d dist -D --delete-dir-on-start --strip-leading-paths",
