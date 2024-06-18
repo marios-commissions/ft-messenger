@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"random": "^4.1.0",
-		"ws": "^8.14.1"
+		"ws": "^8.17.1"
 	},
 	"devDependencies": {
 		"@swc/cli": "0.1.62",
